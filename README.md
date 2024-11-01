@@ -1,8 +1,5 @@
-# HW3
-My example page
+# HW3  (edited in main branch)
 
-This page was created for screencast for curran
+https://mgarciaotero.github.io/HW3/
 
-(this page was edited in branch: main)
 
-https://mgarciaotero.github.io/HW3/index.html
