@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Margarita Garcia-Otero
+  File Description:
+  After putting in entry, move focus outside of input box calls function to
+  validate the entry passing the index of that input box in the node collection.
+  message under input box displays if entry was valid or invalid with message.
+  
+  I have a table element in my html which I used for testing
+  adding rows in the html initially and then changed all adding of rows
+  to javascript functions.  (There was no horizontal line displayed
+  in this configuration.)
+  When I changed display of table to "block" to allow scrolling, a horizontal line appeared
+  on my page before any table is generated.  (I played a bit with
+  borders of the table and cells but ran out of time.)
+  I tried to make a sticky column for the horizontal scrolling but
+  had issues.  Not sure if I needed to add a tbody and add the cells to it
+  or change my cells from td to th cells.  I ran out of time to
+  play more with this.
+  I ran out of time to style the rows.
+
+  Input testing: Invalid input box entries for each input box
+  such as abc, -51, 51, 1.2 and others.  Message underneath box will update
+  when focus changes from that input box.  Invalid values are highlighted in gold.
+  When the max input box for columns or rows is entered, the min/max range
+  is also checked and invalid min value is highlighted in gold.
+  I originally had the input cleared out if it was invalid but after
+  seeing Jose's video, a previous grader, on the assignment, I changed my code to leave in the value.
+
+  Sources: w3Schools.com, stackoverflow.com, geeksforgeeks.org
+           Class textbook, Javascript for Dummies
+  -->
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/mystyles.css">
+</head>
+<body>
+
+<div>
+<h1>Multiplication Table</h1>
+</div>
+<h4>Column Range (enter integer -50 to 50 inclusive, min must be LT or EQ to max)</h4>
+
+<p>Min: <input name="number" type="text" onfocusout="isValid(0)">
+    <span id="entry0">valid/invalid?</span >
+</p>
+<p>Max: <input name="number" type="text" onfocusout="isValid(1)"> 
+    <span id="entry1">valid/invalid?</span > 
+</p>
+
+<h4>Row Range (enter integer -50 to 50 inclusive, min must be LT or EQ to max)</h4>
+
+<p>Min: <input name="number" type="text" onfocusout="isValid(2)">
+    <span id="entry2">valid/invalid?</span >
+</p>
+<p>Max: <input name="number" type="text" onfocusout="isValid(3)"> 
+    <span id="entry3">valid/invalid?</span > 
+</p>
+
+<br><br>
+<button type="button" onclick="generateTable()">Generate Table</button>
+<br><br>
+
+
+<div>
+    <table id="myTable">
+    </table>
+</div>    
+
+<script src="js/myscript.js">
+</script>
+
+</body>
+</html>
