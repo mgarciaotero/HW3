@@ -1,0 +1,56 @@
+/* Margarita Garcia-Otero 
+
+File Description: 
+This CSS file sets up the initial styling for the html file.
+A few styling elements are done dynamically in my javascript file.
+
+I had problems with a unwanted horizontal line
+showed up on initial load after I got the horizontal scrollbar working.
+I ran out of time to see if the line was a border issue with the table
+or div or something else.
+
+Adding padding to the cells helped visibility of the cells when displayed.
+
+I allotted some time to play with a sticky column but was unsuccessful.
+(More details are in html File Description.)  
+
+Sources: w3Schools.com, stackoverflow.com, geeksforgeeks.org
+           Class textbook, Javascript for Dummies
+*/ 
+
+
+
+table, td {
+    border: 1px solid black; 
+    text-align:center;
+}
+td {
+    background-color:blue; 
+    color:white;
+    padding: 8px;
+}
+table {
+    border-collapse: collapse;
+    max-width:100%;
+
+    display:block;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space:nowrap;
+}
+h1 {
+    text-align:center;
+    color:green;
+}
+
+
+label, input {
+    display:block;
+}
+
+
+.sticky-col {
+    position: sticky;
+    left: 0px;
+}
+
