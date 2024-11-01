@@ -1,6 +1,3 @@
-# HW3
-My example page
+# HW3 (Edited README.md in gh-pages branch)
 
-This page was created for screencast for curran
-
-(Page edited in branch: gh-pages)
+https://mgarciaotero.github.io/HW3/
